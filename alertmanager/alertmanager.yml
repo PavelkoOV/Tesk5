@@ -1,0 +1,19 @@
+lobal:
+  resolve_timeout: 5m
+
+route:
+  receiver: 'email'
+  group_by: ['alertname', 'severity']
+  group_wait: 10s
+  group_interval: 5m
+  reapeat_interval: 12h
+
+receivers:
+  - name: 'email'
+    email_configs:
+      - to: 'aiexanPavelko@gmail.com'
+        from: 'aiexanPavelko@gmail.com'
+        smarthost: 'smtp.gmail.com:587'
+        auth_username: 'aiexanPavelko@gmail.com'
+        auth_identity: 'aiexanPavelko@gmail.com'
+        auth_password: 'P@ssword'
