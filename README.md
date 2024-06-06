@@ -1,1 +1,2 @@
-# Tesk5
+# Завдання 5
+Подняти зв’язку prometheus + alertmanager + grafana + custom server (based on linux on your own choice) на цей сервер встановити node_exporter та налаштувати алерт на якийсь із параметрів з node_exporter (наприклад: CPU, memory usage, disk space, network traffic) та навантажити систему для спрацювання алерта (наприклад якщо алерт на вільне місце на диску - використати утиліту за допомогою якої можна забити місце на сервері або якщо CPU usage навантажити якоюсь операцією CPU для спрацювання алерта)
